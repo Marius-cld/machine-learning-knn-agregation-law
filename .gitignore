@@ -1,0 +1,21 @@
+# Données (privées, non versionnées)
+data/raw/data_agreg.xlsx
+data/processed/
+data/models/
+
+# Sorties générées par les scripts
+figure/
+table/
+
+# Python
+__pycache__/
+*.pyc
+*.pkl
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
