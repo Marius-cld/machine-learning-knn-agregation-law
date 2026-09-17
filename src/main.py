@@ -19,8 +19,8 @@ from pipeline import MODELS_DIR, pipeline
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_XLSX = ROOT_DIR / "data" / "raw" / "data_agreg.xlsx"
-FIGURE_DIR = ROOT_DIR / "figure"
-TABLE_DIR = ROOT_DIR / "table"
+FIGURE_DIR = ROOT_DIR / "figures"
+TABLE_DIR = ROOT_DIR / "tables"
 
 
 def main():

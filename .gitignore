@@ -6,10 +6,10 @@ data/models/*
 !data/models/.gitkeep
 
 # Sorties générées par les scripts
-figure/*
-!figure/.gitkeep
-table/*
-!table/.gitkeep
+figures/*
+!figures/.gitkeep
+tables/*
+!tables/.gitkeep
 
 # Python
 __pycache__/

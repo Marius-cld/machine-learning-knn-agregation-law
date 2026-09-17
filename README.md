@@ -88,8 +88,8 @@ Lors de l'entraînement sur le jeu de données de l'exercice, le modèle
 `weights="uniform"` (k=7), avec une accuracy d'environ **70 %** sur le jeu de
 test (contre ~50 % pour un classifieur aléatoire sur un problème binaire
 déséquilibré). Les graphiques générés (matrices de confusion, courbes ROC,
-distributions, corrélations) sont sauvegardés dans `figure/`, et le tableau
-récapitulatif de la sélection de modèle dans `table/model_selection_summary.csv`,
+distributions, corrélations) sont sauvegardés dans `figures/`, et le tableau
+récapitulatif de la sélection de modèle dans `tables/model_selection_summary.csv`,
 à l'exécution des scripts.
 
 Avec seulement 2 features imposées par la contrainte de l'exercice, la marge
@@ -114,8 +114,8 @@ algorithmes (arbres, régression logistique) ou d'enrichir les features
 │   │   └── data_agreg.xlsx     # Donnée source (à ajouter manuellement, non versionné)
 │   ├── processed/              # Snapshots intermédiaires du pipeline — généré, non versionné
 │   └── models/                 # Transformateurs + modèle KNN final (.pickle/.pkl) — généré, non versionné
-├── figure/                     # Graphiques générés (exploration, matrices de confusion, courbes ROC) — non versionné
-└── table/                      # Résultats structurés (outliers détectés, sélection de modèle) — non versionné
+├── figures/                    # Graphiques générés (exploration, matrices de confusion, courbes ROC) — non versionné
+└── tables/                     # Résultats structurés (outliers détectés, sélection de modèle) — non versionné
 ```
 
 ## Installation et utilisation
