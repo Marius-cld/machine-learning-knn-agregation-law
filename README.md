@@ -31,7 +31,7 @@ et de droit privé entre 1993 et 2015, avec pour chaque candidat :
 | `Publication`                       | Score de publications du candidat (pondéré par rapport aux autres candidats)          |
 | `Specialite`                        | Concours concerné (droit public ou droit privé)                                       |
 | `Period`                            | Période à laquelle le concours a eu lieu                                              |
-| `resultat`                          | Résultat au concours (`admis` / `non-admis`) — **variable cible**                     |
+| `resultat`                          | Résultat au concours (`admis` / `non-admis`), **variable cible**                     |
 
 L'énoncé complet de l'exercice est disponible dans [`docs/enonce.pdf`](docs/enonce.pdf).
 
@@ -70,7 +70,7 @@ L'énoncé complet de l'exercice est disponible dans [`docs/enonce.pdf`](docs/en
 
    Les transformateurs sont ajustés sur le jeu d'entraînement puis
    sauvegardés (`data/models/*.pickle`), afin d'être appliqués tels
-   quels sur le jeu de test — sans fuite d'information entre les deux jeux.
+   quels sur le jeu de test, sans fuite d'information entre les deux jeux.
 
 4. **Modélisation et évaluation** (`src/main.py`) :
    - séparation train/test stratifiée (80/20) ;
@@ -112,10 +112,10 @@ algorithmes (arbres, régression logistique) ou d'enrichir les features
 ├── data/
 │   ├── raw/
 │   │   └── data_agreg.xlsx     # Donnée source (à ajouter manuellement, non versionné)
-│   ├── processed/              # Snapshots intermédiaires du pipeline — généré, non versionné
-│   └── models/                 # Transformateurs + modèle KNN final (.pickle/.pkl) — généré, non versionné
-├── figures/                    # Graphiques générés (exploration, matrices de confusion, courbes ROC) — non versionné
-└── tables/                     # Résultats structurés (outliers détectés, sélection de modèle) — non versionné
+│   ├── processed/              # Snapshots intermédiaires du pipeline, généré, non versionné
+│   └── models/                 # Transformateurs + modèle KNN final (.pickle/.pkl), généré, non versionné
+├── figures/                    # Graphiques générés (exploration, matrices de confusion, courbes ROC), non versionné
+└── tables/                     # Résultats structurés (outliers détectés, sélection de modèle), non versionné
 ```
 
 ## Installation et utilisation
